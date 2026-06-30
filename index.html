@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puisi Sal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">PuisiKu</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#puisi">Puisi</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-deco" aria-hidden="true">&#8220;</div>
+        <div class="hero-content">
+            <p class="hero-label">— koleksi puisi sal —</p>
+            <h1>Untuk segala rasa<br />yang belum sempat terutara</h1>
+            <p class="hero-sub">jika aku tak bisa hadir dalam indah matamu, maka biarlah puisiku mengalun dalam
+                sanubarimu..</p>
+            <a href="#puisi" class="btn">Baca Puisi</a>
+        </div>
+    </section>
+
+    <!-- PUISI -->
+    <section class="puisi" id="puisi">
+        <h2 class="section-title">Daftar Puisi Sal</h2>
+        <p class="section-sub">Kumpulan puisi yang dibuat sal.</p>
+
+        <div class="filter-bar">
+            <button class="filter-btn-activate" data-filter="semua">Semua</button>
+            <button class="filter-btn" data-filter="alam">Alam</button>
+            <button class="filter-btn" data-filter="bulan">Bulan</button>
+            <button class="filter-btn" data-filter="cinta">Cinta</button>
+            <button class="filter-btn" data-filter="senja">Senja</button>
+            <button class="filter-btn" data-filter="diri">Diri</button>
+            <button class="filter-btn" data-filter="asa">Asa</button>
+        </div>
+
+        <div class="puisi-grid" id="puisi-grid">
+
+            <article class="puisi-card-alam" data-kategori="alam">
+                <span class="kategori-tag">Alam</span>
+                <h3>Hujan di Bulan Mei</h3>
+                <div class="puisi-preview">
+                    Hujan mengetuk kaca<br />
+                    seperti kamu yang tak pernah masuk—
+                </div>
+                <button class="baca-btn" data-id="1">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-bulan" data-kategori="bulan">
+                <span class="kategori-tag">Bulan</span>
+                <h3>Pendar Bulan</h3>
+                <div class="puisi-preview">
+                    ku lihat indah dan pendar nya menghiasi langit<br />
+                    terang dan kilau nya membuat awan tersipu—
+                </div>
+                <button class="baca-btn" data-id="2">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-nama" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Nama yang Tak Kusebut</h3>
+                <div class="puisi-preview">
+                    Ada nama yang selalu<br />
+                    berhenti di ujung lidahku—
+                </div>
+                <button class="baca-btn" data-id="3">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-sempurnamu" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Sempurna Mu</h3>
+                <div class="puisi-preview">
+                    tak sadarkah?<br />
+                    parasmu yang menyita sorot mataku—
+                </div>
+                <button class="baca-btn" data-id="4">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-senja" data-kategori="senja">
+                <span class="kategori-tag">Senja</span>
+                <h3>Rona Senja</h3>
+                <div class="puisi-preview">
+                    langit senja sore itu buat ku ingin lewati batas,
+                    rona merah pada langit mu, rasanya tak ingin ku bagi pada makhluk bumi lain—<br />
+                </div>
+                <button class="baca-btn" data-id="5">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-jatuhcintalahpadaku" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Jatuh Cintalah Padaku</h3>
+                <div class="puisi-preview">
+                    di kehidupan yang hanya sekali ini, tolong jatuh cinta lah padaku...
+                    dalam dunia yang fana ini, tolong hapuskanlah jarak yang terbentang itu..—<br />
+                </div>
+                <button class="baca-btn" data-id="6">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-temuyangkurindu" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Temu yang Ku Rindu</h3>
+                <div class="puisi-preview">
+                    meski belum ku jumpai kau dalam pertemuan, 
+                    ku simpan tiap bait rindu dalam setiap lagu, —<br />
+                </div>
+                <button class="baca-btn" data-id="7">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-diri" data-kategori="diri">
+                <span class="kategori-tag">Diri</span>
+                <h3>Pesan Untuk Takdir</h3>
+                <div class="puisi-preview">
+                    Diantara bahu yang kuat,
+                    mengapa harus bahu rapuh ku yang ditaruh banyak harapan? —<br />
+                </div>
+                <button class="baca-btn" data-id="8">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-asa" data-kategori="asa">
+                <span class="kategori-tag">Asa</span>
+                <h3>Harap yang Tersimpan</h3>
+                <div class="puisi-preview">
+                    setiap harap yang tersimpan, 
+                    setiap doa yang dilangitkan,—<br />
+                </div>
+                <button class="baca-btn" data-id="9">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-katayangtakterutara" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Kata yang Tak Terutara</h3>
+                <div class="puisi-preview">
+                    netra yang menatap potret dengan pilu, 
+                    nanar yang terpancar bagai sembilu,— <br />
+                </div>
+                <button class="baca-btn" data-id="10">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-cinta-selamattinggalobsesi" data-kategori="cinta">
+                <span class="kategori-tag">Cinta</span>
+                <h3>Selamat Tinggal Obsesi</h3>
+                <div class="puisi-preview">
+                    sore ini, kan ku akui segala rasa yang tersimpan dalam jiwa..
+                    tentang segala rasa cinta yang ku pelihara,— <br />
+                </div>
+                <button class="baca-btn" data-id="11">Baca Selengkapnya</button>
+            </article>
+
+            <article class="puisi-card-senja-lautdansenja" data-kategori="senja">
+                <span class="kategori-tag">Senja</span>
+                <h3>Laut dan Senja</h3>
+                <div class="puisi-preview">
+                    laut yang memantulkan cahaya langit senja,
+                    ombak yang riuh gemuruh nya seolah sedang bercerita,— <br />
+                </div>
+                <button class="baca-btn" data-id="12">Baca Selengkapnya</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+            <span class="modal-kategori" id="modal-kategori"></span>
+            <h2 class="modal-judul" id="modal-judul"></h2>
+            <div class="modal-isi" id="modal-isi"></div>
+        </div>
+    </div>
+
+    <!-- TENTANG -->
+    <section class="tentang" id="tentang">
+        <div class="tentang-inner">
+            <div class="tentang-avatar">&#10022;</div>
+            <h2>Tentang Sal</h2>
+            <p>
+                Hai untuk semua yang sudah baca puisi sal, terima kasih karena sudah membaca segala yang aku
+                tuangkan dalam kata. Salam kenal, aku salwa salsabila mahasiswi informatika fakultas sains dan teknologi
+                di Universitas Negeri Sultan Maulana Hasanuddin Banten.
+            </p>
+            <p>
+                Web ini aku buat untuk menampung segala asa yang ku harap menjadi nyata, dan
+                ku persembahkan untuk sepasang mata yang ku harap bisa ku tatap dalam niscaya. Semoga puisi yang aku
+                buat bisa menjadi pelipur lara untuk siapa saja yang membaca nya yaa.
+            </p>
+            </p>
+            <div class="tentang-stats">
+                <div><strong id="c-puisi">0</strong><span>Puisi</span></div>
+                <div><strong id="c-kategori">0</strong><span>Kategori</span></div>
+                <div><strong id="c-tahun">0</strong><span>Tahun Menulis</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&#10022; Ruang Kata &mdash; Semua puisi adalah karya pribadi salwa salsabila.</p>
+        <p class="footer-year">&copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
